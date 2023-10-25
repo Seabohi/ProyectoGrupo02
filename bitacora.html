@@ -49,6 +49,7 @@
 				</header>
 
 			<!-- Banner -->
+			<!--
 				<section id="banner">
 					<div class="content">
 						<header>
@@ -60,7 +61,7 @@
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
-
+			-->
 			<!-- One -->
 				<section id="one" class="spotlight style1 bottom">
 					<span class="image fit main"><img src="images/bitácora/02.png" /></span>
@@ -92,6 +93,64 @@
 				</section>
 
 			<!-- Two -->
+			<section id="three" class="spotlight style3 left">
+				<span class="image fit main bottom"><img src="images/bitácora/04.png" alt="" /></span>
+				<div class="content">
+					<header>
+						<h2>Verificación de funcionamiento del Arduino</h2>
+						<p>11/octubre/2023</p>
+					</header>
+					<p>Una vez comprado la mayoría de componentes, se realizó la comprobación del correcto funcionamiento del Arduino con apoyo
+					de la plataforma Arduino IDE con un código básico que consistió en enceder un diodo LED de manera intermitente. Como se ve
+					en la imagen, todo funcionó de manera adecuada y se pudo proseguir con la prueba de los demás componentes.</p>
+					<!--<ul class="actions">
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul>-->
+				</div>
+				<a href="#three" class="goto-next scrolly">Next</a>
+			</section>
+
+			<!-- Three -->
+			<section id="two" class="spotlight style2 right">
+				<span class="image fit main"><img src="images/bitácora/05.png" alt="" /></span>
+				<div class="content">
+					<header>
+						<h2>Prueba de la pantalla LCD</h2>
+						<p>17/octubre/2023</p>
+					</header>
+					<p>El siguiente paso fue la comprobación de la pantalla LCD 16x2 con el módulo de extensión I2C para saber si funcionaba o no.
+					Para realizar esta prueba es requisito descargar la librería <b>LiquidCrystal_I2C</b> y buscar un ejemplo donde se pueda probar
+					el texto tanto de manera estática como en movimiento. Algo importante mencionar es que se debe girar la perilla de la parte
+					posterior de la pantalla si es que no se logra visualizar el texto, con ese mando se logra ajustar la iluminación de la pantalla.</p>
+					<!--<ul class="actions">
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul>-->
+				</div>
+				<a href="#four" class="goto-next scrolly">Next</a>
+			</section>
+
+			<!-- Four -->
+			<section id="three" class="spotlight style3 left">
+				<span class="image fit main bottom"><img src="images/bitácora/06.png" alt="" /></span>
+				<div class="content">
+					<header>
+						<h2>Prueba del módulo lector RFID</h2>
+						<p>18/octubre/2023</p>
+					</header>
+					<p>Para comprobar el reconocimiento de la tarjeta y el llavero TAG es necesario descargar la librería <b>MFRC522</b> y realizar
+					las conexiones entre el módulo lector RFID y Arduino. Es importante soldar el módulo lector con el conector de pines de 90° para
+					que la conexión sea óptima. Una vez todo lo físico esté configurado, se procede a acceder a la plataforma Arduino IDE y utilizar 
+					el ejemplo <em>DumpInfo</em> para probar el reconocimiento de las identifaciones tanto de la tarjeta como del llavero. Una vez
+					salga en <b>monitor serial</b> los números de identificación, se registra en una nota y la prueba de reconocimiento ha sido
+					exitosa.</p>
+					<!--<ul class="actions">
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul>-->
+				</div>
+				<a href="#five" class="goto-next scrolly">Next</a>
+			</section>
+
+			<!-- Five -->
 				<section id="two" class="spotlight style2 right">
 					<span class="image fit main"><img src="images/bitácora/03.png" alt="" /></span>
 					<div class="content">
@@ -109,26 +168,28 @@
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>-->
 					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
+					<a href="#six" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- Three -->
+			<!-- Six-->
 				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images2/pic04.jpg" alt="" /></span>
+					<span class="image fit main bottom"><img src="images/bitácora/07.png" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum felis blandit praesent sed augue</h2>
-							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+							<h2>Programación global del proyecto RFID</h2>
+							<p>23/octubre/2023</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
+						<p>Unión de todos los códigos para generar el código global que involucre al módulo lector RFID, la pantalla LCD, los
+						diodos LED y el micro servomotor con las distinciones correctas de acuerdo a la función de cada "llave".</p>
+						<!--<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+						</ul>-->
 					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
+					<a href="#seven" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- Four -->
+			<!-- Seven -->
+			<!--	
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
@@ -176,8 +237,9 @@
 						</footer>
 					</div>
 				</section>
-
+				-->
 			<!-- Five -->
+			<!-- 
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
@@ -192,7 +254,7 @@
 						</form>
 					</div>
 				</section>
-
+			-->
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
@@ -204,7 +266,7 @@
 						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Estudio Maqueta</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 

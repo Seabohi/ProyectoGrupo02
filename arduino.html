@@ -67,22 +67,54 @@
 										<h2>Código del proyecto RFID con Micro servomotor</h2>
 									</header>
 									<span class="image featured"><img src="images/proyecto/06.png" alt="" /></span>
-									<h3>And yeah, that's basically it</h3>
+									<h3>Estructura básica del código</h3>
+									<p>El esqueleto principal del lenguaje de programación en Arduino es bastante simple y se inicia con la
+									declaración de librerías a usar, en este caso se tiene que considerar <b>MFRC522</b>, <b>LiquidCrystal_I2C</b>
+									y <b>Servo</b> porque se va a utilizar un módulo lector RFID, una pantalla LCD 16x2 con un módulo de
+									extensión I2C y un micro servomotor SG90 como componentes.</p>
 									<p></p>
-									<p></p>
-									<p></p>
+									<p>En la línea 22 inicia la función <b>setup()</b> que se invoca una sola vez cuando el programa inicia y es
+									la parte encargada de recoger la configuración. En este caso se está utilizando para empezar los modos de 
+									trabajo de los pines, por ejemplo el micro servomotor
+									está conectado en el pin 3 y se configura el pin como salida.</p>
 									<span class="image featured"><img src="images/proyecto/07.png" alt="" /></span>
-									<h3>Accumsan lorem ipsum veroeros</h3>
-									<p></p>
-									<p></p>
+									<h3>Loop()</h3>
+									<p>Se coloca esta función luego de <em>setup()</em> y se ejecuta de forma cíclica o en bucle. En esta parte 
+									se ejecuta constantemente lectura de entradas y activación de entradas. En la línea 41 se determina el número
+									de <b><em>baudios</em></b> con que se va a trabajar el código, en casi todos los proyectos se trabaja con 9600.
+									Seguidamente, en la línea 43, se encuentra el bucle tipo <b>while</b> que es de ejecución continua mientras se
+									cumpla la expresión colocada entre paréntesis, en este caso sería la lectura de la tarjeta o llave. Entre llaves
+									se programa la labor de limpiar la pantalla, ubicar el texto de inicio en los ejes 0 (columna) y 0 (fila) y situar
+									el ángulo del micro servomotor en 90°.</p>
+									<p>En la línea 49 se encuentra el estamento <b>if</b> que se emplea para probar si una determinada condición se 
+									llega a alcanzar. Un ejemplo de esta función podría ser el reconocimiento de una "llave" si está registrada en el
+									sistema para poder accionar el sistema de apertura. Si la "llave" está registrada, aparece el mensaje <em>Acceso
+									concedido</em> en la pantalla, se enciende el diodo #2 (verde) y el servomotor realiza un giro.</p>
+									<p>En la líena 57 se aprecia la declaración <b>for</b> que se emplea para repetir un bloque de sentencias encerradas
+									entre llaves un número determinado de veces. La declaración cuenta con tres partes separadas: la primera que muestra
+									<em>pos = 0</em> quiere decir que es la <b>inicialización</b> de la ejecución, se encuentra el ángulo en la posición 0 
+									cuando se va activar; la segunda, <em>pos <= 180</em>, quiere decir que es la <b>condición</b> de la ejecución, el ángulo
+									de giro puede llegar hasta 180; y la última, <em>pos++</em>, quiere decir que es la <b>expresión</b> de la ejecución, el
+									giro se realizará hacia el lado derecho del origen.</p>
 									<span class="image featured"><img src="images/proyecto/08.png" alt="" /></span>
-									<h3>Ligula suspcipit fusce veroeros</h3>
-									<p></p>
+									<h3>else</h3>
+									<p>Es otro estamento que se refiere a una respuesta al estamento <em>if</em> si es que hay otra opción de ejecución. En
+									este caso sería si una "llave" no registrada pasa por el lector RFID, como se ve en el código, saldrá <em>Acceso denegado</em>
+									, se prenderá el diodo #1 (rojo) y el micro servomotor no ejecturá ningún movimiento. Es importante mencionar que este 
+									estamento puede ir precedido de otra condición de manera que se pueden establecer varias estructuras condicionales siempre y
+									cuando sean mutuamente excluyentes y se puedan ejecutar a la vez.</p>
 									<p></p>
 									<span class="image featured"><img src="images/proyecto/09.png" alt="" /></span>
-									<h3>Ligula suspcipit fusce veroeros</h3>
-									<p></p>
-									<p></p>
+									<h3>Elementos importantes</h3>
+									<p>En la línea 96 podemos observar una <b>línea de comentarios</b> que se inicia con // y se finaliza con la siguiente línea 
+									de código. Estas dos líneas son ignoradas por el programa y no ocupan espacio en la memoria. Se utiliza bastante después de una
+									instrucción, como se aprecia en la línea 100, para brindar mayor información acerca de lo que significa cada línea.</p>
+									<p>La línea 98 es iniciada con una <b>{ (llave)</b> que sirve para definir el principio y el final de un bloque de instrucciones.
+									Es necesario que haya dos llaves porque sino el programa botará <em>error</em> y no se podrá validar el código. Igual el mismo 
+									programa facilita al usuario remarcando en color rojo la llave que se encuntre si es que faltara una llave.</p>
+									<p>El <b>; (punto y coma)</b> se emplea para disgregar instrucciones en el lenguaje de programación en Arduino. También se puede 
+									utilizar para separar elementos en una instrucción de tipo <em>for</em> como se visualiza en la línea 108. Igualmente que el anterior
+									elemento, es necesario colocar esto porque sino el programa botará diversos errores en su validación.</p>
 									<span class="image featured"><img src="images/proyecto/10.png" alt="" /></span>
 								</article>
 
