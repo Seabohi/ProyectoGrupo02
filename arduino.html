@@ -72,7 +72,13 @@
 									declaración de librerías a usar, en este caso se tiene que considerar <b>MFRC522</b>, <b>LiquidCrystal_I2C</b>
 									y <b>Servo</b> porque se va a utilizar un módulo lector RFID, una pantalla LCD 16x2 con un módulo de
 									extensión I2C y un micro servomotor SG90 como componentes.</p>
-									<p></p>
+									<p>El código cuenta con dos variables en esta ventana: la primera se ubica a partir de la línea 7 y es <b>int</b>
+									e indica la conexión de cada diodo LED en el Arduino mediante cables Dupont. En el caso de la línea 9 indica la 
+									posición inicial del micro servomotor. La segunda es <b>byte</b> y se ubica en la línea 14 donde su función principal
+									es leer cada "llave" que pase por el módulo lector RFID de acuerdo a la información almacenada en el sistema. En la 
+									siguiente línea se registra la identificación de la "llave" que cuenta con el acceso permitido. Estas variables permiten
+									almacenar un valor númerico para su uso posterior en el programa, en un término más sencillo sería reemplazar el punto 
+									físico que sería la conexión en el <em>pin 6</em> por la palabra <em>led2</em>.</p>
 									<p>En la línea 22 inicia la función <b>setup()</b> que se invoca una sola vez cuando el programa inicia y es
 									la parte encargada de recoger la configuración. En este caso se está utilizando para empezar los modos de 
 									trabajo de los pines, por ejemplo el micro servomotor
@@ -90,7 +96,9 @@
 									llega a alcanzar. Un ejemplo de esta función podría ser el reconocimiento de una "llave" si está registrada en el
 									sistema para poder accionar el sistema de apertura. Si la "llave" está registrada, aparece el mensaje <em>Acceso
 									concedido</em> en la pantalla, se enciende el diodo #2 (verde) y el servomotor realiza un giro.</p>
-									<p>En la líena 57 se aprecia la declaración <b>for</b> que se emplea para repetir un bloque de sentencias encerradas
+									<p>En la línea 55 la estructura digital <b>digitalWrite</b> y envía al pin definido, en este ejemplo sería el led2, como
+									<em>OUTPUT</em> el valor de HIGH. En este caso el diodo verde (led2) se encenderá mientras que el rojo (led1) no.</p>
+									<p>En la línea 57 se aprecia la declaración <b>for</b> que se emplea para repetir un bloque de sentencias encerradas
 									entre llaves un número determinado de veces. La declaración cuenta con tres partes separadas: la primera que muestra
 									<em>pos = 0</em> quiere decir que es la <b>inicialización</b> de la ejecución, se encuentra el ángulo en la posición 0 
 									cuando se va activar; la segunda, <em>pos <= 180</em>, quiere decir que es la <b>condición</b> de la ejecución, el ángulo
