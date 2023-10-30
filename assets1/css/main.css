@@ -2088,7 +2088,7 @@ input, select, textarea {
 	}
 
 		#features p {
-			text-align: center;
+			text-align: justify;
 		}
 
 		#features ul.actions {
