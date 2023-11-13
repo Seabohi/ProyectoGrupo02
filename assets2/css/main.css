@@ -2586,6 +2586,10 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+		ul.actions .li2 {
+			padding-left: 45em;
+		}
+
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
