@@ -676,7 +676,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color: #d3ae67;
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -733,7 +733,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		.button:hover,
 		button:hover {
-			background-color: #a8cea4;
+			background-color: #d3ae67;
 		}
 
 		input[type="button"]:active,
@@ -741,7 +741,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		.button:active,
 		button:active {
-			background-color: #88bc82;
+			background-color: #d3ae67;
 		}
 
 		input[type="button"].style2,
