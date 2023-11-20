@@ -1866,12 +1866,13 @@ input, select, textarea {
 	}
 
 		#header h1 {
-			position: absolute;
+			/* position: absolute; */
 			left: 1em;
 			top: 0;
 			height: 3em;
 			line-height: 3em;
 			cursor: default;
+			margin: 0 10px;
 		}
 
 			#header h1 a {
