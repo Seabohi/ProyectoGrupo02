@@ -2138,6 +2138,7 @@ input, select, textarea {
 			position: relative;
 		}
 
+		
 			#banner > .container:before, #banner > .container:after {
 				content: '';
 				display: block;
@@ -2161,7 +2162,10 @@ input, select, textarea {
 				transform: scaleX(-1);
 				right: 0;
 			}
-
+		
+			#banner > #container2:before, #banner > #container2:after {
+				display: none;
+			}
 /* Main */
 
 	#main {

@@ -2065,7 +2065,7 @@ input, select, textarea {
 			text-align: center;
 			padding: 6em 0 6em 0;
 		}
-
+		
 			.main.style3 .content > header {
 				margin-bottom: 2em;
 			}
@@ -2077,6 +2077,21 @@ input, select, textarea {
 			.main.style3.secondary {
 				background: #f5f6f7;
 			}
+		
+		.main.style4 {
+			text-align: center;
+			padding: 6em 0 1em 0;
+		}
+
+		.main.style5 {
+			text-align: center;
+			padding: 1em 0 1em 0;
+		}
+
+		.main.style6 {
+			text-align: center;
+			padding: 1em 0 6em 0;
+		}
 
 		.main.dark {
 			color: #ffffff;
