@@ -2313,6 +2313,15 @@ input, select, textarea {
 		z-index: 1;
 	}
 
+/* Zero */
+
+#zero {
+	background: url("images/bitácora/01.png"), url("../../images/bitácora/38.png") ;
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
 /* One */
 
 	#one {
