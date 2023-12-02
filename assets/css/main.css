@@ -2063,7 +2063,7 @@ input, select, textarea {
 
 		.main.style3 {
 			text-align: center;
-			padding: 6em 0 6em 0;
+			padding: 3em 0 6em 0;
 		}
 		
 			.main.style3 .content > header {
@@ -2090,7 +2090,7 @@ input, select, textarea {
 
 		.main.style6 {
 			text-align: center;
-			padding: 1em 0 6em 0;
+			padding: 6em 0 3em 0;
 		}
 
 		.main.dark {
@@ -2325,7 +2325,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images/bitácora/01.png"), url("../../images/bitácora/01.png") ;
+		background: url("images/bitácora/01.png"), url("../../images/bitácora/39.png") ;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2334,7 +2334,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/bitácora/23.png"), url("../../images/bitácora/23.png");
+		background: url("images/bitácora/23.png"), url("../../images/bitácora/40.png");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
