@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
 /*
 	Arcana by HTML5 UP
@@ -2545,8 +2546,11 @@ input, select, textarea {
 		}
 
 			#header h1 a {
-				font-size: 1.5em;
-				letter-spacing: -0.025em;
+				font-family: "Source Sans Pro", sans-serif;
+				font-weight: 900;
+				font-size: 4.25em;
+				line-height:1em;
+				letter-spacing: -0.05em;
 				border: 0;
 			}
 

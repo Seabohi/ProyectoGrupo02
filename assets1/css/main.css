@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
 /*
 	Strongly Typed by HTML5 UP
@@ -1915,12 +1916,14 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			font-family: 'Arvo';
-			font-weight: 700;
+			font-family: "Source Sans Pro", sans-serif;
+			font-weight: 900;
 			color: #24d5f3;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-			font-size: 3em;
-			letter-spacing: 13px;
+			font-size: 4.25em;
+			line-height:1em;
+			letter-spacing: -0.05em;
+			text-transform: none;
 		}
 
 			#header h1 a {
