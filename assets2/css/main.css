@@ -100,10 +100,11 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(0, 0, 0, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: "Source Sans Pro", sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
+		text-align: justify;
 	}
 
 	a {
@@ -147,6 +148,7 @@ input, select, textarea {
 		}
 
 	h2 {
+		font-family: "Source Sans Pro", sans-serif;
 		font-size: 2em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
@@ -2155,6 +2157,7 @@ input, select, textarea {
 	}
 
 	header p {
+		font-family: "Source Sans Pro", sans-serif;
 		color: #000000;
 		position: relative;
 		margin: 0 0 1.5em 0;

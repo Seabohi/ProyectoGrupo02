@@ -119,14 +119,16 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.65em;
+		font-size: 1.85em;
 		font-weight: 400;
-		letter-spacing: 4px;
+		letter-spacing: 0.5px;
 		margin: 0 0 1.5em 0;
 		line-height: 1.75em;
+		
 	}
 
 	h3 {
+		font-family: "Source Sans Pro", sans-serif;
 		font-size: 1em;
 		letter-spacing: 2px;
 		margin: 0 0 1.25em 0;
@@ -1931,11 +1933,12 @@ input, select, textarea {
 			}
 
 		#header p {
+			font-family: "Source Sans Pro", sans-serif;
 			text-transform: uppercase;
-			font-weight: 400;
+			font-weight: 600;
 			color: #888;
 			margin: 2.5em 0 0 0;
-			font-size: 0.85em;
+			font-size: 1.05em;
 			letter-spacing: 3px;
 			text-align: center;
 		}
@@ -2118,17 +2121,18 @@ input, select, textarea {
 		border-bottom: solid 0px #e5e5e5;
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 		position: relative;
-		text-transform: uppercase;
+		text-transform: none;
 		background: url("../../images/banner.jpg");
 		background-size: cover;
 		padding: 10em 0;
 	}
 
 		#banner p {
-			font-weight: 400;
-			font-size: 1.5em;
-			line-height: 1.3em;
-			letter-spacing: 4px;
+			font-family: "Source Serif Pro", sans-serif;
+			font-weight: 300;
+			font-size: 18pt;
+			line-height: 1.75em;
+			letter-spacing: 0.025em;
 			text-align: justify;
 			margin: 0;
 		}
