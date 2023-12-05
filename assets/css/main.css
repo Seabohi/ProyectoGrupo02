@@ -624,6 +624,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 3em;
+		text-align: justify;
 	}
 
 	.carrera {
