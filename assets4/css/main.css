@@ -2181,7 +2181,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		padding-left: 1em;
+		padding-left: 0em;
 	}
 
 		ul li {
@@ -2240,7 +2240,7 @@ input, select, textarea {
 			ul.menu li:first-child {
 				border-left: 0;
 				margin-left: 0;
-				padding-left: 0;
+				padding-left: 1;
 			}
 
 /* Actions */
